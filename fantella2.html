@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/d82f3a6817.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var startTime = new Date();
+    </script>
+    <link rel="stylesheet" href="searchbox.css">
+    <style type="text/css">
+        i {color:blue; font-size: 50px}
+        p {color:aliceblue; background-color: deepskyblue; letter-spacing: 10px; text-align: center}
+        b {color:blue; letter-spacing: 10px; text-align:center; font-size: 50px; font-family: sans-serif}
+        
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+        }
+        
+        .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+        }
+
+        .tablink:hover {
+        background-color: #777;
+        }
+        .tabcontent {
+        color: white;
+        display: none;
+        padding: 50px;
+        text-align: center;
+        }
+
+        #Girl Figure {background-color:red;}
+        #Boy Figure {background-color:green;}
+        #Set Figure {background-color:blue;}
+        #Chibi Figure {background-color:orange;}
+
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    
+<div id="Girl Figure" class="tabcontent">
+  <h1>Girl Figure</h1>
+    <p>if you're a girl then choose your own figure here</p>
+</div>
+
+<div id="Boy Figure" class="tabcontent">
+  <h1>Boy Figure</h1> 
+    <p>if you're a boy then choose your own figure here</p>
+</div>
+
+<div id="Set Figure" class="tabcontent">
+  <h1>Set Figure</h1>
+    <p>if you want a set figure then choose your own figure here</p>
+</div>
+
+<div id="Chibi Figure" class="tabcontent">
+  <h1>Chibi Figure</h1>
+    <p>if you want a mini figure then choose your own figure here</p>
+</div>
+
+<button class="tablink" onclick="openCity('Girl Figure', this, 'red')" id="defaultOpen">Girl Figure</button>
+<button class="tablink" onclick="openCity('Boy Figure', this, 'green')">Boy Figure</button>
+<button class="tablink" onclick="openCity('Set Figure', this, 'blue')">Set Figure</button>
+<button class="tablink" onclick="openCity('Chibi Figure', this, 'orange')">Chibi Figure</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+document.getElementById("defaultOpen").click();
+</script>
+<script type="text/javascript">
+  var currentTime = new Date();
+  var Fantella = currentTime - startTime;
+  document.write("<p>Fantella=" + Fantella + "<p/>");
+</script>
+    <img src="large_fantella.png" width="300" height="100">
+    <div class="search-box">
+        <input class="search-txt" type="text" placeholder="Search...">
+        <a class="search-btn" href="#">
+        <i class="fas fa-search"></i>
+        </a>
+    </div>
+    <i class="far fa-bell"></i>
+    <img src="shopbanner.jpg" width="1500" height="310>">
+    <p>TOP CHART</p>
+    <img src="20cm-Japanese-anime-figure-action-figure-your-lie-in-april-kaori-miyazono-cartoon-doll-PVC-figurine.jpg" width="900" height="500">
+    <br><b>FAN FAVORITES</b><br>
+    <img src="asuna%20figure.jfif">
+    <img src="emilia%20figure.jfif">
+    <img src="erza%20figure.jfif">
+    <img src="figure.jfif">
+    <img src="kagura%20figure.jfif">
+    <img src="kotori%20DAL%20figure.jfif">
+    <img src="kotori%20figure.jfif">
+    <img src="lucy%20figure.jfif">
+    <img src="Miku%20figure.jfif">
+    <img src="nezuko%20figure.jfif">
+    <img src="ram%20figure.jfif">
+    <img src="rem%20figure.jfif">
+    <img src="saber%20figure.jfif">
+    <img src="tohka%20figure.jfif">
+</body>
+</html>
